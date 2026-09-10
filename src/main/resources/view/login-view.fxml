@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane id="AnchorPane" prefHeight="680.0" prefWidth="650.0" styleClass="login-root" stylesheets="@../css/login-view.css" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.edu.ingsoft.sonrisas.perfectas.controller.LoginController">
+   <children>
+      <GridPane alignment="CENTER" prefHeight="580.0" prefWidth="650.0" styleClass="login-layout" stylesheets="@../css/login-view.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="211.4000244140625" minWidth="0.0" prefWidth="0.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="591.1999572753906" minWidth="10.0" prefWidth="591.1999572753906" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="153.20001220703125" minWidth="1.200042724609375" prefWidth="1.200042724609375" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="345.5999816894531" minHeight="10.0" prefHeight="26.9999912261963" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="552.7999389648438" minHeight="10.0" prefHeight="527.6" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="546.4" minHeight="10.0" prefHeight="30.799999999999955" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="login-container" stylesheets="@../css/login-view.css" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+               <children>
+                  <ImageView fx:id="imageLogin" fitHeight="175.0" fitWidth="176.0" layoutX="49.0" layoutY="30.0" onMouseClicked="#animarImagenClick" onMouseEntered="#animarImagenLogin" onMouseExited="#restaurarImagenLogin" pickOnBounds="true" preserveRatio="true" styleClass="login-image">
+                     <image>
+                        <Image url="@../images/image001.png" />
+                     </image></ImageView>
+                  <Label layoutX="251.0" layoutY="88.0" prefHeight="59.0" prefWidth="263.0" styleClass="login-title" stylesheets="@../css/login-view.css" text="Administracion de &#10;Tratamientos" textAlignment="CENTER" />
+                  <Button layoutX="120.0" layoutY="425.0" mnemonicParsing="false" onAction="#iniciarSesion" prefHeight="32.0" prefWidth="352.0" styleClass="login-button" stylesheets="@../css/login-view.css" text="Entrar" />
+                  <TextField fx:id="txtUsuario" layoutX="120.0" layoutY="284.0" prefHeight="32.0" prefWidth="352.0" styleClass="login-field" stylesheets="@../css/login-view.css" />
+                  <PasswordField fx:id="txtContrasena" layoutX="120.0" layoutY="355.0" prefHeight="32.0" prefWidth="352.0" styleClass="login-field" stylesheets="@../css/login-view.css" />
+                  <Label layoutX="120.0" layoutY="265.0" styleClass="login-label" stylesheets="@../css/login-view.css" text="Nombre de Usuario" />
+                  <Label layoutX="120.0" layoutY="336.0" styleClass="login-label" stylesheets="@../css/login-view.css" text="Contraseña" />
+               </children>
+            </Pane>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,13 @@
+# Archivos generados por NetBeans/Ant
+/build/
+/dist/
+
+# Configuración privada/local de NetBeans
+/nbproject/private/
+
+# Archivos temporales de Java
+*.class
+
+# Archivos temporales del sistema
+Thumbs.db
+.DS_Store
